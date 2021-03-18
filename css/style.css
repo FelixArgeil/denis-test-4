@@ -603,7 +603,7 @@ body{
 
 /*Страница с полным ПРАЙС ЛИСТОМ*/
 .full-price {
-	background-color: #2768F5
+	background-color: #3d3d3d;
 }
 .full-price__wrapper {}
 .full-price__body {
