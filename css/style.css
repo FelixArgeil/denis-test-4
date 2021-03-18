@@ -1,0 +1,1082 @@
+body{
+	font-family: "Open Sans", "sans-serif";
+	background-color: #faf9f0;
+}
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	background: #020823;
+}
+::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #020823;
+}
+
+.header {
+	background: url(../img/shapka.png) center no-repeat ;
+	background-size: cover;
+	position: relative;
+}
+.container {
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.header__wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	padding: 100px 0;
+}
+.header__main-title {
+	font-size: 60px;
+	line-height: 64px;
+	font-weight: 500;
+	color: #fff;
+}
+.header__main-title span{
+	font-size: 64px;
+	line-height: 66px;
+	font-weight: 600;
+
+}
+.header__content-text {
+	margin: 15px 0 5px 0;
+}
+.header__content-text p{
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #fff;
+}
+.header__contact {
+	display: flex;
+	flex-direction: column;
+}
+.header__number{
+	padding: 5px 0;
+	display: flex;
+	margin: 0 0 10px 0;
+}
+.header__number a{
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid transparent;
+	transition: ease .3s;
+	padding: 5px 0;
+}
+.header__number a:hover{
+	border-bottom: 2px solid #fff;
+}
+.header__number a p{
+	color: #fff;
+	font-size: 26px;
+	font-weight: 600;
+	padding:  0 0 0 5px;
+}
+.header__number a img{
+	max-width: 50px;
+}
+
+
+.header__contact__item{
+	width: 150px;
+	height: 50px;
+	color: #fff;
+	margin: 0 0 10px 0;
+	font-size: 22px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__WhatsApp{
+	background: linear-gradient(45deg, #1EBEA5,
+	 #00E676, #D0E9EA);
+	transition: all .5s;
+}
+.header__WhatsApp:hover {
+	transform: translateY(-20%);
+}
+.insta-bg{
+	transition: all .5s;
+	background: linear-gradient(45deg, #405DE6, #5851DB,
+	 #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+.insta-bg:hover {
+	transform: translateY(-20%);
+}
+
+
+
+
+
+.button-hover{
+	transition: all .3s;
+	background: #42aaff;
+	border-radius: 3px;
+}
+.button-hover:hover {
+	background: #1faee9;
+	box-shadow: 0 3px 15px rgba(31, 174, 233, .7);
+}
+/*Обратная связь в Шапке сайта*/
+.header__connection {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 25%);
+	width: 570px;
+	max-height: 180px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 12px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .7)
+}
+.connection__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+.connection__input {
+	width: 49%;
+	height: 40px;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .2)
+}
+.connection__button {
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+.connection__button a{
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 17px;
+}
+.dd{
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	display: flex;
+}
+.fff{
+	width: 100%;
+	padding: 7px 0 0 0;
+	display: flex;
+}
+#forma__header{
+	width: 100%;
+	height: 40px;
+	padding: 5px;
+	border-radius: 3px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+
+/*                           */
+/*Обо МНЕ*/
+.about-me {
+	padding: 100px 0;
+}
+
+.about-me__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #000;
+	font-weight: 500;
+}
+.about-me__main-title {
+	font-size: 40px;
+	line-height: 44px;
+	padding: 0 20px 20px 0;
+}
+.about-me__main-title span{
+	font-size: 26px;
+	line-height: 28px;
+}
+
+.about-me__cart {
+	position: relative;
+	width: 480px;
+	height: 270px;
+	perspective: 1000px;
+}
+.about-me__cart-front,
+.about-me__cart-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: ease 1.5s;
+}
+
+.about-me__cart-front{
+	transform: rotateY(-180deg);
+}
+.about-me__cart:hover .about-me__cart-front{
+	transform: rotateY(-360deg);
+}
+.about-me__cart:hover .about-me__cart-back{
+	transform: rotateY(-180deg);
+}
+.about-me__cart-front img,
+.about-me__cart-back img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/**/
+.advant {
+	position: relative;
+	background: url(../img/bg-3.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.advant__bg{
+	background-color: rgba(13,130,204, 0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.advant__wrapper {
+	position: relative;
+	font-weight: 500;
+	color: #fff;
+	padding: 100px 0;
+	z-index: 5;
+}
+.advant__body{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 80px 0;
+}
+.advant__main-title {
+	font-size: 40px;
+	line-height: 44px;
+	font-weight: 600;
+	text-align: left;
+}
+.advant__main-title span{
+	font-weight: 400;
+}
+.advant__colums {
+	max-width: 700px;
+	padding: 0 0 0 20px;
+}
+.advant__colums-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.advant__colums-item li{
+	display: flex;
+	text-align: left;
+	padding: 5px 5px;
+	font-size: 18px;
+	line-height: 22px;
+	width: 50%;
+}
+.advant__colums-item li:before {
+    content: '\2713';
+    display: block;
+    color: red;
+    padding: 0 6px 0 0;
+    font-size: 28px;
+}
+.advant__footer{
+	text-align: center;
+}
+.advant__footer span{
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.advant__footer p{
+	padding: 5px 0;	
+	font-size: 19px;
+	line-height: 21px;
+}
+
+
+
+/**/
+.services {
+	margin: 0 0 40px 0;
+	position: relative;
+	background: url(../img/bg-3.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.services__wrapper {
+	padding: 100px 0;
+	color: #fff;
+	z-index: 5;
+	position: relative;
+}
+.services__body {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+/*Прайс лист   */
+.price {}
+.price__wrapper {
+	margin: 120px 0 80px 0;
+	background: url(../img/sv77T8BnOqY.jpg) center no-repeat ;
+	background-size: cover;
+	position: relative;
+}
+.price__bg{
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.price__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2;
+	position: relative;
+}
+.price__main-title {
+	font-size: 46px;
+	line-height: 48px;
+	font-weight: 600;
+	color: #fff;
+	padding: 30px;
+}
+.price__list {
+	max-width: 1050px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 10px 0;
+	border-radius: 8px;
+}
+.price__list__item {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+}
+.price__list__item p{
+	padding: 10px 0 5px 0;
+	font-size: 21px;
+	line-height: 23px;
+	color: #fff;
+}
+.price__list__item p:nth-child(1) {
+    max-width: 75%;
+}
+.price__button {
+	display: inline-block;
+	margin: 35px 0;
+}
+.price__button a{
+	display: block;
+	padding: 15px 25px;
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #fff;
+}
+
+
+/*Мои работы*/
+.me-works {}
+.me-works__wrapper {
+	font-weight: 600;
+	color: #fff;
+	padding: 0 0 40px 0;
+}
+.me-works__main-title {
+	font-size: 32px;
+	font-weight: 600;
+	color: #000;
+	text-align: center;
+	margin: 0 0 25px 0;
+}
+
+.me-works__main-title button a{
+	display: inline-block;
+	font-size: 34px;
+	font-weight: 400;
+	color: #fff;
+	padding: 7px 15px;
+	border-radius: 3px;
+}
+.me-works__body {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -10px;
+}
+.work__item {
+	position: relative;
+	flex: 0 1 33%;
+	margin: 0 10px;
+	box-shadow: 0 3px 15px rgba(31, 174, 233, .7);
+	overflow: hidden;
+	cursor: pointer;
+	background-color: #2787F5;
+}
+.work__item__contant{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.work__item__img {
+	padding: 20px;
+	height: 250px;
+}
+.work__item__img img{
+	height: 100%;
+}
+.work__item__text {
+	padding: 0 20px 20px 20px;
+	text-align: center;
+	font-size: 14px;
+}
+.work__item:hover{
+	box-shadow: box-shadow: 0 3px 15px rgba()
+}
+.work__item:hover .work__item__bg{
+	top: 0;
+}
+.work__item__bg {
+	top: 100%;
+	padding: 40px;
+	transition: ease .6s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #405DE6, #5851DB,
+	 #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+.work__item__bg p{
+	font-size: 21px;
+	line-height: 25px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	padding: 0 0 30px 0;
+}
+.work__item__button a{
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 22px;
+	font-weight: 600;
+	display: block;
+}
+
+
+
+
+/*Форма обратной связи*/
+.forma {}
+.forma__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px 0;
+}
+.forma__title{
+	font-size: 36px;
+	font-weight: 600;
+	color: #000;
+	letter-spacing: 2px;
+	padding: 0 0 30px 0;
+}
+.footer__content{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px;
+	background-color: #ccc;
+	width: 620px;
+}
+.forma__item {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.form__input{
+	width: 48%;
+	height: 40px;
+	padding: 5px;
+	margin: 10px 0;
+	font-size: 14px;
+	color: #000;
+	font-weight: 600;
+}
+#forma__text{
+	width: 100%;
+	height: 150px;
+	padding: 5px;
+	font-size: 16px;
+	color: #000;
+	font-weight: 500;
+}
+.form__button-conteiner{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.forma__button {
+	display: block;
+	margin: 10px 0 0 0;
+	padding: 10px 20px;
+	justify-content: flex-end;
+}
+.forma__button a{
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
+
+/*Подвал сайта*/
+.footer {
+	background: #0D82CC;
+	padding: 20px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	color: #fff;
+}
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.footer__contact {
+	display: flex;
+}
+.footer__contact__colomn {
+	padding: 0 70px 0 0;
+}
+.footer__contact__colomn p{
+	font-size: 17px;
+}
+.footer__contact-number a{
+	display: block;
+	font-size: 19px;
+	color: #fff;
+	padding: 5px 0;
+	border-bottom: 1px solid #fff;
+}
+.footer__instagram {
+	max-width: 70px;
+}
+.footer__instagram img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+/*Страница с полным ПРАЙС ЛИСТОМ*/
+.full-price {
+	background-color: #2768F5
+}
+.full-price__wrapper {}
+.full-price__body {
+	margin: 0 0 30px 0;
+	padding: 20px 0 50px 0;
+}
+.full-price__title {
+	color: #fff;
+	font-size: 32px;
+	line-height: 34px;
+	font-weight: 900;
+	text-align: left;
+	padding: 10px 0 15px 10px;
+}
+
+
+.full-price__button {
+	position: fixed;
+	top: 8px;
+	left: 10px;
+	z-index: 5;
+}
+.full-price__button a{
+	padding: 7px 15px;
+	display: block;
+	font-size: 19px;
+	font-weight: 500;
+	color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 1065px){
+	.about-me__cart {
+	    width: 550px;
+	}
+	.price__wrapper {
+	    margin: 65px 0;
+	}
+	.me-works__body {
+	    justify-content: center;
+	    flex-wrap: wrap;
+	}
+	.work__item {
+	    position: relative;
+	    flex: 0 1 44%;
+	    margin: 0 10px 10px 10px;;
+	}
+}
+@media screen and (max-width: 992px){
+	.services__body {
+	    flex-direction: column;
+	}
+	.advant__body {
+	    display: flex;
+	    padding: 0 0 55px 0;
+	    flex-direction: column;
+	}
+	.advant__main-title {
+	    padding: 0px 0 40px 0;
+	}
+	.advant__colums {
+	    width: 100%;
+	    margin: 0 0 0 15%;
+	    padding: 0;
+	}
+	.services__wrapper {
+	    padding: 90px 0;
+	}
+	.advant__wrapper {
+	    padding: 85px 0;
+	}
+	.me-works__wrapper {
+	    padding: 0px 0 20px 0;
+	}
+	.forma__wrapper {
+	    padding: 85px 0;
+	}
+}
+@media screen and (max-width: 875px){
+	.about-me {
+	    padding: 90px 0;
+	}
+	.about-me__cart {
+	    width: 625px;
+	    height: 250px;
+	}
+	.advant__colums {
+	    padding: 0 0 0 5%;
+	    margin: 0;
+	}
+	.price__list__item p {
+	    padding: 10px 10px 5px 10px;
+	}
+	.price__main-title {
+	    font-size: 42px;
+	    padding: 25px;
+	}
+}
+@media screen and (max-width: 800px){
+	.about-me {
+	    padding: 70px 0;
+	}
+	.about-me__wrapper {
+	    justify-content: center;
+	    flex-direction: column;
+	}
+	.about-me__main-title {
+	    padding: 0px 20px 33px 0;
+	}
+	.about-me__cart {
+	    width: 625px;
+	    height: 375px;
+	}
+	.work__item {
+	    flex: 0 1 60%;
+	}
+}
+@media screen and (max-width: 720px){
+	.advant__colums-item li {
+	    padding: 7px 0px;
+	    width: 100%;
+	}
+	.advant__colums {
+	    padding: 0 0 0 20px;
+	}
+	.services__wrapper {
+	    padding: 65px 0;
+	}
+	.advant__wrapper {
+	    padding: 65px 0;
+	}
+	.advant__body {
+	    padding: 0 0 45px 0;
+	}
+	.forma__wrapper {
+	    padding: 75px 0;
+	}
+	.price__main-title {
+	    font-size: 40px;
+	    padding: 40px 0 20px;
+	}
+}
+@media screen and (max-width: 650px){
+	.header__wrapper {
+	    padding: 80px 0 100px 0;
+	}
+	.header__connection {
+	    width: 475px;
+	}
+	.header__main-title {
+	    font-size: 54px;
+	    line-height: 60px;
+	}
+	.header__main-title span {
+	    font-size: 58px;
+	    line-height: 62px;
+	}
+	.about-me__main-title {
+	    font-size: 33px;
+	    line-height: 40px;
+	}
+	.about-me__cart {
+	    width: 525px;
+	    height: 325px;
+	}
+	.price__main-title {
+	    font-size: 42px;
+	    line-height: 42px;
+	    padding: 30px 0 10px 0;
+	}
+	.price__list__item p {
+	    font-size: 19px;
+	    line-height: 21px;
+	}
+	.price__wrapper {
+	    margin: 50px 0;
+	}
+	.price__button {
+	    margin: 24px 0;
+	}
+	.work__item {
+	    flex: 0 1 70%;
+	}
+	.me-works__main-title button {
+	    margin: 10px;
+	}
+	.forma__wrapper {
+	    padding: 65px 0;
+	}
+	.footer__content {
+	    width: 530px;
+	}
+	.footer__contact-number a {
+	    font-size: 15px;
+	}
+	.footer__contact__colomn {
+	    padding: 0 30px 0 0;
+	}
+	.price__main-title {
+	    font-size: 38px;
+	    padding: 55px 0 20px;
+	}
+	.full-price__title {
+	    font-size: 27px;
+	    line-height: 29px;
+	    padding: 10px 0 25px 10px;
+	}
+}
+@media screen and (max-width: 540px){
+	.header__connection {
+	    width: 435px;
+	}
+	.header__main-title {
+	    font-size: 45px;
+	    line-height: 52px;
+	}
+	.header__main-title span {
+	    font-size: 53px;
+	    line-height: 56px;
+	}
+	.header__wrapper {
+	    padding: 60px 0 100px 0;
+	}
+	.about-me__cart {
+	    width: 425px;
+	    height: 260px;
+	}
+	.about-me__main-title {
+	    font-size: 27px;
+	    line-height: 32px;
+	}
+	.about-me {
+	    padding: 60px 0;
+	}
+	.services__wrapper {
+	    padding: 50px 0;
+	}
+	.advant__wrapper {
+	    padding: 50px 0;
+	}
+	.advant__body {
+	    padding: 0 0 35px 0;
+	}
+	.advant__footer p {
+	    font-size: 17px;
+	    line-height: 20px;
+	}
+	.advant__colums-item li:before {
+	    font-size: 22px;
+	}
+	.advant__main-title {
+	    font-size: 32px;
+	    line-height: 40px;
+	}
+	.advant__colums-item li {
+	    font-size: 16px;
+	    line-height: 19px;
+	}
+	.price__list__item p {
+	    font-size: 16px;
+	    line-height: 17px;
+	}
+	.price__button {
+	    margin: 19px 0;
+	}
+	.price__main-title {
+	    font-size: 38px;
+	    line-height: 40px;
+	    font-weight: 500;
+	    padding: 23px 0 5px 0;
+	}
+	.price__button a {
+	    padding: 12px 14px;
+	    font-size: 18px;
+	}
+	.work__item {
+	    flex: 0 1 80%;
+	}
+	.footer__content {
+	    width: 435px;
+	    padding: 20px 10px;
+	}
+	.forma__item {
+	    flex-direction: column;
+	}
+	.form__input {
+	    margin: 0 0 8px 0;
+	    width: 100%;
+	}
+	#forma__text {
+	    height: 115px;
+	}
+	.forma__title {
+	    font-size: 30px;
+	}
+	.forma__wrapper {
+	    padding: 45px 0;
+	}
+	.price__main-title {
+	    padding: 55px 0 5px 0;
+	}
+}
+@media screen and (max-width: 450px){
+	.header__connection {
+	    width: 370px;
+	}
+	.header__main-title {
+	    font-size: 39px;
+	    line-height: 41px;
+	}
+	.header__main-title span {
+	    font-size: 47px;
+	    line-height: 49px;
+	}
+	.about-me__cart {
+	    display: none;
+	}
+	.about-me {
+	    padding: 58px 0 20px 0;
+	}
+	.about-me__main-title {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+	.price__list__item p {
+	    font-size: 14px;
+	    line-height: 15px;
+	}
+	.price__list__item p {
+	    padding: 10px 4px 5px 3px;
+	}
+	.me-works__main-title {
+	    font-size: 29px;
+	}
+	.me-works__main-title button {
+	    margin: 20px 0 0 0;
+	}
+	.work__item {
+	    flex: 0 1 95%;
+	}
+	.me-works__body {
+	    margin: 0;
+	}
+	.footer__content {
+	    width: 365px;
+	}
+	.form__input {
+	    height: 35px;
+	}
+	#forma__text {
+	    height: 110px;
+	}
+	.forma__title {
+	    font-size: 28px;
+	    padding: 0px 0 20px 0;
+	    letter-spacing: 0;
+	}
+	.footer__contact__colomn p {
+	    font-size: 15px;
+	}
+	.footer__contact-number a {
+	    font-size: 14px;
+	}
+	.footer__instagram {
+	    max-width: 55px;
+	}
+	.footer__contact__colomn {
+	    padding: 0 20px 0 0;
+	}
+	.price__main-title {
+	    font-size: 33px;
+	}
+	.full-price__title {
+	    font-size: 19px;
+	    line-height: 20px;
+	    padding: 0 0 25px 0px;
+	}
+}
+@media screen and (max-width: 375px){
+	.header__connection {
+	    width: 320px;
+	}
+	.header__main-title {
+	    font-size: 33px;
+	    line-height: 41px;
+	}
+	.header__main-title span {
+	    font-size: 43px;
+	    line-height: 49px;
+	}
+	.header__content-text {
+	    margin: 10px 0 5px 0;
+	}
+	.advant__main-title {
+	    font-size: 27px;
+	    line-height: 32px;
+	}
+	.advant__colums {
+	    padding: 0 0 0 0px;
+	}
+	.advant__colums-item li {
+	    padding: 5px 0px;
+	}
+	.advant__colums-item li {
+	    font-size: 14px;
+	    line-height: 16px;
+	}
+	.advant__footer p {
+	    font-size: 13px;
+	    line-height: 14px;
+	}
+	.advant__footer span {
+	    font-size: 17px;
+	    line-height: 21px;
+	}
+	.advant__main-title {
+	    padding: 0px 0 30px 0;
+	}
+	.price__list__item p {
+	    font-size: 13px;
+	    line-height: 15px;
+	}
+	.price__button a {
+	    padding: 12px 10px;
+	    font-size: 16px;
+	}
+	.price__wrapper {
+	    margin: 35px 0;
+	}
+	.price__button {
+	    margin: 15px 0;
+	}
+	.work__item {
+	    margin: 0 0 10px 0;
+	}
+	.footer__content {
+	    width: 320px;
+	    padding: 15px 7px;
+	}
+	.forma__title {
+	    font-size: 25px;
+	}
+	.forma__wrapper {
+	    padding: 32px 0;
+	}
+	.footer {
+	    padding: 15px 0;
+	}
+	.footer__contact__colomn {
+	    padding: 0px 15px 0 0;
+	}
+	.footer__contact__colomn p {
+	    font-size: 13px;
+	}
+	.footer__contact-number a {
+	    font-size: 12px;
+	}
+	.footer__instagram {
+	    max-width: 45px;
+	}
+	.price__main-title {
+	    font-size: 30px;
+	    padding: 40px 0 5px 0;
+	}
+}
+@media screen and (max-width: 320px){
+	.header__connection {
+	    width: 300px;
+	}
+}
+
+
+
